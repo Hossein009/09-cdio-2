@@ -1,12 +1,19 @@
 package dasuki;
+import dasuki.*;
 public class Spiller {
-    public final String navn;
+    private String name;
 
-
-    Spiller(String navn) {
-        this.navn = navn;
+    public String getName() {
+        return name;
     }
-    String getNavn(){
-        return navn;
+    public void setName(String name){
+        this.name = name;
+    }
+
+    private Account account;
+
+    public Spiller(String name) {
+        this.name = name;
+        this.account = new Account();
     }
 }
