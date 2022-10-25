@@ -11,4 +11,8 @@ public class Account {
     public int getAccount(){
         return balance;
     }
+
+    public int setAccount(int balance){
+        return this.balance = balance;
+    }
 }

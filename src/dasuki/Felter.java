@@ -2,17 +2,10 @@ package dasuki;
 import dasuki.Spiller.*;
 import java.util.ArrayList;
 public class Felter {
-    int MIN = 0;
-
-    public void minBalance() {
-        if (Balance < MIN)
-            Balance = 0;
-    }
-
+    public Felter(){}
 int[] felter = {0, 250,  -100,  100,  -20,  180,  0,  -70, 60,  -80, -50,  650};
 
-String[][] felterString = {{"Tower", "Godt gået! Du har modtaget 250 point"},
-        {"Crater, Desværre! du har mistet 100 point"},
+String[][] felterString = {{"Tower, Godt gået! Du har modtaget 250 point"}, {"Crater, Desværre! du har mistet 100 point"},
         {"palaceGates, Tillykke! du har modtaget 100 point"},
         {"coldDesert, Åh nej! du har mistet 20 point"},
         {"walledCity, Sådan! du har mogtaget 180"},
@@ -24,48 +17,41 @@ String[][] felterString = {{"Tower", "Godt gået! Du har modtaget 250 point"},
         {"Goldmine, Tillykke du har modtaget 650 point"}};
 
 public int getSquare(int sumTerning){
-    System.out.println(felterString[sumTerning-1][1]);
     return felter[sumTerning];
 
 }
 
-  public int getTower(){
-    return balance + felter[0];
+  public String getTower(int sumTerning){
+    return felter[sumTerning] + " " + felterString[sumTerning-1][1];
   }
-    public int getCrater() {
-        return Balance + felter[1];
+    public int getCrater(int sumTerning) {
+        return felter[1];
     }
     public int getPalaceGates() {
-        return Balance + felter[2];
+        return felter[2];
 }
     public int getColdDesert() {
-        return Balance + felter[3];
+        return felter[3];
 }
     public int getWalledCity() {
-        return Balance + felter[4];
+        return felter[4];
 }
     public int getMonastery() {
-        return Balance + felter[5];
+        return felter[5];
 }
     public int getBlackCave() {
-        return Balance + felter[6];
+        return felter[6];
 }
     public int getHutsInTheMountain() {
-        return Balance + felter[7];
+        return felter[7];
 }
     public int getTheWerewall() {
-        return Balance + felter[8];
+        return felter[8];
 }
     public int getThePit() {
-        return Balance + felter[9];
+        return felter[9];
 }
     public int getGoldmine() {
-        return Balance + felter[10];
+        return felter[10];
 }
-
-
-
-    public String toString() {
-        return Integer.toString(Balance);
-    }
 }
