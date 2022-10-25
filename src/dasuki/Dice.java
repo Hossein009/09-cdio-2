@@ -13,7 +13,7 @@ public class Dice {
     }
     public int roll() {
         Random ran = new Random();
-        Dice2 = ran.nextInt(6)+1;
+        Dice1 = ran.nextInt(6)+1;
         Dice2 = ran.nextInt(6)+1;
         return getSum();
     }
