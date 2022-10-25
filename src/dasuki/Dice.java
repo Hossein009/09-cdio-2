@@ -16,6 +16,5 @@ public class Dice {
         Dice2 = ran.nextInt(6)+1;
         return getSum();
     }
-
 }
 
