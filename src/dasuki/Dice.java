@@ -1,16 +1,33 @@
 package dasuki;
 
-public class Dice {
-    public int terning1;
-    public int terning2;
-    public int sumTerning = 0;
+import java.util.Random;
 
-    public Dice() {
+public class Dice {
+    public int Dice1;
+    public int Dice2;
+
+    public Dice(int Dice1, int Dice2) {
+        this.Dice1 = Dice1;
+        this.Dice2 = Dice2;
+        roll();
     }
-    public void roll() {
-        terning1 = (int) (Math.random() * 6) + 1;
-        terning2 = (int) (Math.random() * 6) + 1;
-        sumTerning = terning1 + terning2;
-        System.out.println(sumTerning);
+    public int roll() {
+        Random ran = new Random();
+        Dice2 = ran.nextInt(6)+1;
+        Dice2 = ran.nextInt(6)+1;
+        return getSum();
     }
+    public int getSum() {
+        return Dice1 + Dice2;
+    }
+
+    public int getDice1() {
+        return Dice1;
+    }
+
+    public int getDice2() {
+        return Dice2;
+    }
+
 }
+
