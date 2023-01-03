@@ -7,6 +7,7 @@ public abstract class Field {
 
     public Field (String name, String message) {
         this.name = name;
+        this.message = message;
     }
 
     public String getName() {
@@ -17,5 +18,11 @@ public abstract class Field {
         this.name = name;
     }
 
+    public String getMessage(){
+        return message;
+    }
 
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }
