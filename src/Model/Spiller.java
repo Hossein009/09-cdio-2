@@ -15,7 +15,7 @@ public class Spiller {
 
     public Spiller(String name) {
         this.name = name;
-        this.account = new Account();
+        this.account = new Account(1000);
         this.position = 0;
     }
 
@@ -25,6 +25,14 @@ public class Spiller {
 
     public int getPosition(){
         return position;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
 
