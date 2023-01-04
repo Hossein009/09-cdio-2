@@ -1,4 +1,4 @@
 package Model.chancecard;
 
-public class move {
+public class Move {
 }
